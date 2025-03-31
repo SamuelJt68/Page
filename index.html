@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Samuel Ayala</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav aria-label="Main Navigation">
+            <ul class="nav-links">
+                <li><a>Inicio</a></li>
+                <li><a>Portafolio</a>
+                <li><a routerLink="/contact">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-left">
+                <div class="hero-content">
+                    <img src="https://cdn-icons-png.flaticon.com/512/3135/3135768.png" alt="imagen de ejemplo">
+                    <h1>Samuel Ayala</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum officia voluptates harum? Sapiente expedita quae molestias fuga alias culpa id voluptas quam eveniet pariatur esse tempore facere, commodi non omnis.</p>
+                    <h1>Preguntas Frecuentes</h1>
+                    <div class="faq">
+                        <div class="faq-item">
+                            <button class="faq-question">¿Qué servicios ofrece?</button>
+                        </div>
+                        <div class="faq-item">
+                            <button class="faq-question">¿Qué experiencia tiene?</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-right">
+                <form class="reservation-form" action="/enviar" method="post">
+                    <h2>Formulario de Contacto</h2>
+                    <label for="check-in">Nombre:</label>
+                    <input type="text" id="check-in" name="check-in" required>
+                    <label for="check-out">Mensaje:</label>
+                    <input type="text" id="check-out" name="check-out" required>
+                    <button type="submit" class="btn-primary" title="Haz tu reservación ahora">Contactar</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>
+            &copy; 2025 - Todos los derechos reservados. |
+        </p>
+    </footer>
+</body>
+</html>
